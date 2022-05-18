@@ -1,0 +1,146 @@
+
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    background:rgb(105, 236, 105);
+    
+}
+
+
+nav {
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    display: felx;
+    background-color: rgb(11, 121, 121);
+    justify-content: space-evenly;
+    width: calc(100% - 0%);
+    z-index: 100;
+}
+
+nav div {
+    display: flex;
+}
+
+nav div img {
+    /* background-color: red; */
+    text-align: center;
+    margin: auto;
+}
+
+nav div img:first-of-type {
+    padding: 8px;
+}
+
+nav div h2 {
+    text-align: center;
+    color: blanchedalmond;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav div:last-of-type {
+    background-color: rgb(253, 168, 89);
+    padding: 10px;
+    justify-content: space-evenly;
+}
+
+nav div:last-of-type button {
+    background-color: rgb(59, 59, 59);
+    color: antiquewhite;
+    outline: none;
+    border: none;
+    padding: 5px 8px;
+    border-radius: 5em;
+    box-shadow: 0 0 8px rgba(247, 247, 247, 0.527);
+}
+
+nav div:last-of-type button:hover {
+    cursor: pointer;
+    background-color: rgb(46, 45, 45);
+    padding: 0 10px;
+}
+
+#event {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -50%);
+    z-index: 1;
+    background-color: transparent;
+    height: calc(100% - 0%);
+    width: calc(100% - 0%);
+    text-align: center;
+    overflow: auto;
+}
+#Home.hid{
+    display: none;
+}
+#Home{
+    display: block;
+}
+#Home div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    /* background-color: antiquewhite; */
+    width: calc(100% - 20%);
+    padding: 2rem 0;
+    justify-content: space-around;
+    color: blanchedalmond;
+    z-index: 10;
+}
+
+#Home div h3,
+.subpages {
+    justify-content: center;
+    /* background-color: red; */
+    text-align: center;
+    padding: 5rem 0 0 0;
+    font-size: x-large;
+}
+
+#Events {
+    /* background-color: burlywood; */
+    flex-direction: column;
+    margin: 2rem 0 0 0;
+    display: none;
+}
+#Events.show{
+    display: flex;
+}
+
+/* .eventsClass {
+    display: flex;
+    background-color: red;
+    flex-direction: column;
+} */
+.eventsClass{
+    margin: 10% 0 5% 0;
+    /* background-color: black; */
+}
+.eventsClass>div {
+    display: flex;
+    /* background-color: red; */
+    justify-content: space-evenly;
+    height: calc(100% - 10%);
+    margin: -1rem 0 0 0;
+   
+}
+
+.eventsClass>div div {
+    /* background-color: green; */
+    width: 10rem;
+    height: 10rem;
+}
+.eventsClass>div:first-of-type div p{
+    background-color: rgb(41, 41, 41);
+    text-align: start;
+    border-radius: 0 15px 0 0;
+    color: blanchedalmond;
+    margin:50% 0 auto;
+    text-align: center;
+}
